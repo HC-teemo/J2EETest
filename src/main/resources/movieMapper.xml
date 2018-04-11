@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须要和Mapper接口名字一致 -->
+<!-- id必须要和Mapper中的方法名一致 -->
+<mapper namespace="com.huchuan.mapper.MovieMapper">
+    <!-- 1.添加一部电影 -->
+    <insert id="addMovie" parameterType="com.huchuan.model.MovieModel">
+        insert into movie_table (title,type,releaseYear,country,language,time,director,actor,score)
+        values (#{title},#{type},#{releaseYear} ,#{country} ,#{language} ,#{time},#{director},#{actor},#{score})
+    </insert>
+
+</mapper>

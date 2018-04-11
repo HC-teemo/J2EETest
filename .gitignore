@@ -9,3 +9,5 @@ out
 gen
 
 J2EETest.iml
+/WebContent/WEB-INF/lib/
+/target/
