@@ -10,4 +10,35 @@
         values (#{title},#{type},#{releaseYear} ,#{country} ,#{language} ,#{time},#{director},#{actor},#{score})
     </insert>
 
+    <!-- 2.删除一部电影-->
+    <delete id="delMovieById" parameterType="int">
+        DELETE FROM movie_table WHERE id=#{id}
+    </delete>
+    
+    <!-- 3.更新一部电影-->
+    <update id="updateMovie" parameterType="com.huchuan.model.MovieModel">
+        UPDATE movie_table SET title=#{movieModel.title},type=#{movieModel.type},
+        releaseYear=#{movieModel.releaseYear},country=#{movieModel.country},language=#{movieModel.language},time=#{movieModel.time},
+        director=#{movieModel.director},actor=#{movieModel.actor},score=#{movieModel.score} WHERE id=#{id}
+    </update>
+
+    <!-- 4.根据id找电影-->
+    <select id="findMovieById" parameterType="int" resultType="com.huchuan.model.MovieModel">
+        select * from movie_table where id = #{id}
+    </select>
+
+    <!-- 5.根据影名找电影-->
+    <select id="findMoviesByTitle" parameterType="String" resultType="com.huchuan.model.MovieModel">
+        select * from movie_table where title = #{title}
+    </select>
+
+    <!-- 6.根据类型找电影-->
+    <select id="findMoviesByType" parameterType="String" resultType="com.huchuan.model.MovieModel">
+        select * from movie_table where type = #{type}
+    </select>
+
+    <!-- 7.查找所有电影-->
+    <select id="findMovies" resultType="com.huchuan.model.MovieModel">
+        SELECT * FROM movie_table
+    </select>
 </mapper>

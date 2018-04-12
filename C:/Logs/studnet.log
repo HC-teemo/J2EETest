@@ -1,2 +1,32 @@
 [INFO] 2018-04-11 23:07:32 [com.huchuan.test.TestMovie] 
 测试电影添加成功!
+[INFO] 2018-04-12 11:02:31 [com.huchuan.test.TestMovie] 
+测试电影添加成功!
+[INFO] 2018-04-12 17:13:55 [com.huchuan.test.TestMovie] 
+测试电影添加成功!
+[INFO] 2018-04-12 17:34:51 [com.huchuan.test.TestMovie] 
+测试电影添加成功!
+[INFO] 2018-04-12 17:48:14 [com.huchuan.test.TestMovie] 
+测试电影添加成功!
+[INFO] 2018-04-12 18:33:14 [com.huchuan.service.PersistService] 
+已添加电影：Test!
+[INFO] 2018-04-12 18:35:40 [com.huchuan.service.PersistService] 
+已添加电影：Test!
+[INFO] 2018-04-12 18:35:40 [com.huchuan.service.PersistService] 
+已删除电影3
+[INFO] 2018-04-12 18:39:12 [com.huchuan.service.PersistService] 
+已添加电影：Test!
+[INFO] 2018-04-12 18:39:12 [com.huchuan.service.PersistService] 
+已删除电影3
+[INFO] 2018-04-12 18:39:50 [com.huchuan.service.PersistService] 
+已更新电影1
+[INFO] 2018-04-12 18:39:50 [com.huchuan.service.PersistService] 
+已添加电影：Test!
+[INFO] 2018-04-12 18:39:50 [com.huchuan.service.PersistService] 
+已删除电影3
+[INFO] 2018-04-12 18:41:31 [com.huchuan.service.PersistService] 
+已更新电影1
+[INFO] 2018-04-12 18:41:31 [com.huchuan.service.PersistService] 
+已添加电影：Test!
+[INFO] 2018-04-12 18:41:31 [com.huchuan.service.PersistService] 
+已删除电影3
