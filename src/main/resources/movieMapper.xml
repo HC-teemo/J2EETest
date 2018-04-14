@@ -29,16 +29,16 @@
 
     <!-- 5.根据影名找电影-->
     <select id="findMoviesByTitle" parameterType="String" resultType="com.huchuan.model.MovieModel">
-        select * from movie_table where title = #{title}
+        select * from movie_table where title LIKE "%"#{name}"%" ORDER BY score DESC
     </select>
 
     <!-- 6.根据类型找电影-->
     <select id="findMoviesByType" parameterType="String" resultType="com.huchuan.model.MovieModel">
-        select * from movie_table where type = #{type}
+        select * from movie_table where type = #{type} ORDER BY score DESC
     </select>
 
     <!-- 7.查找所有电影-->
     <select id="findMovies" resultType="com.huchuan.model.MovieModel">
-        SELECT * FROM movie_table
+        SELECT * FROM movie_table ORDER BY score DESC
     </select>
 </mapper>

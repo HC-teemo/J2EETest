@@ -172,7 +172,7 @@ public class MovieModel implements Serializable{
 
 		@Override
 		public String toString() {
-				return "MovieModel{" +
+				return "{" +
 						"id=" + id +
 						", title='" + title + '\'' +
 						", type='" + type + '\'' +

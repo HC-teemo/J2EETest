@@ -4,11 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Like Movie!</title>
 </head>
-<body>
-	<center>
-		<h1>欢迎使用学生成绩管理系统</h1>
-	</center>
+<body style="display: flex;align-items: center;justify-content:center;height: 100vh">
+	<div>
+		<form action="/searchMovie" method="get">
+			<input class="" type="text" placeholder="What you like" name="title">
+			<input class="" type="submit" value="Search!"></input>
+			<a href="allMovies" >lookall</a>
+		</form>
+	</div>
+<script src="js/jquery-3.1.1.min.js"></script>
 </body>
 </html>
